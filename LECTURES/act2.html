@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+
+     <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <!-- Numbers Initialization  -->
+    <!-- <div ng-app ng-init="value1=10; value2=15">
+        <p>The total value of 1 and value 2 is: <b>{{value1 + value2}}<b></p>
+    </div> -->
+
+    <!-- String Initialization -->
+    <!-- <div ng-app ng-init="course='BSIT'; yearLevel='2nd year'">
+        <p>Course Information: {{course + " - " + yearLevel}}</p>
+    </div> -->
+
+    <!-- Integrating OOP -->
+    <!-- <div ng-app ng-init="courseInfo={course: 'BSIT', yearLevel: '2nd Year'}">
+        <p>Course Information: {{courseInfo.course + " - " + courseInfo.yearLevel}}</p>
+    </div> -->
+
+    <!-- Two-way binding  -->
+    <div ng-app>
+        <label>Value 1:</label>
+        <input type="number" ng-model="val1">
+        <label>Value 2:</label>
+        <input type="number" ng-model="val2">
+        <p>Total is: {{val1 +  val2}}</p>
+    </div>
+</body>
+</html>

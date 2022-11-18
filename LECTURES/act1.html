@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <h2>Please enter your name</h2>
+        <input type="text" ng-model="nameControl">
+
+        <h3>Hi {{nameControl}}!</h3>
+
+        <!-- ng-bind will duplicate the user input as long as the model name matches the binding name -->
+        <!-- <h3 ng-bind="nameControl">Hi</h3>
+        <p ng-bind="nameControl"></p> -->
+    </div>
+
+</body>
+</html>

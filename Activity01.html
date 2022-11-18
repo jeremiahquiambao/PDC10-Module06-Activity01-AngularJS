@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6 - Activity01</title>
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app>
+        <h1>Welcome to AUF CCS</h1>
+        <div ng-init="course='BSIT'; yearLevel='3rd year'">
+            <p>Course Information: {{course + " - " + yearLevel}}</p>
+      
+        <h3>Please enter your name: <input type="text" ng-model="nameControl"></h3>
+        <h3>Welcome to {{course + " - " + yearLevel}}, {{nameControl|uppercase}}</h3>
+        </div>
+        
+        <div>
+            <h3>Please input your grades: </h3>
+            <label>IPT10:</label>
+            <input type="number" ng-model="val1"> <br> <br>
+            <label>PDC20:</label>
+            <input type="number" ng-model="val2">
+            <p>Your raw grade is: <b>{{(val1 +  val2) / 2}}</b></p>
+        </div>
+    </div>
+</body>
+</html>
